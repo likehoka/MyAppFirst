@@ -19,5 +19,6 @@ class MainActivity : AppCompatActivity() {
         val info = manager.getPackageInfo(this.packageName, PackageManager.GET_ACTIVITIES)
         Log.d("mLog", "App Info: " + info.packageName + " v" + info.versionName + "("
                 + info.versionCode + ")")
+        Log.d("mLog", "App Info: ${info.packageName} v${info.versionName}(${info.versionCode})")
     }
 }
